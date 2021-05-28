@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CampeonatoHomeComponent } from './components/campeonato-home/campeonato-home.component';
+import { CampeonatoClubeComponent } from './components/campeonato-clube/campeonato-clube.component';
+import { CampeonatoJogadorComponent } from './components/campeonato-jogador/campeonato-jogador.component';
+import { CampeonatoPartidasComponent } from './components/campeonato-partidas/campeonato-partidas.component';
 
-//import { HomeComponent } from '.';
-//import { JogadorComponent } from './JogadorComponent/jogador.component';
-//import { ClubesComponent } from './ClubesComponent/clubes.component.component';
-//import { PartidasComponent } from './PartidasComponent/partidas.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  //{ path: 'home', component: HomeComponent },
-  //{ path: 'Jogador', component: JogadorComponent },
-  //{ path: 'Clubes', component: ClubesComponent },
-  //{ path: 'Partidas', component: PartidasComponent },
+  { path: '', component: CampeonatoHomeComponent },
+  { path: 'Jogador', component: CampeonatoJogadorComponent },
+  { path: 'Clubes', component: CampeonatoClubeComponent },
+  { path: 'Partidas', component: CampeonatoPartidasComponent},
 
 ];
 
